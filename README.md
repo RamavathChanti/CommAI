@@ -568,7 +568,7 @@ Deploy the full stack (FastAPI backend + Vite React frontend + SQLite database) 
 
 ```bash
 # Clone the repository
-git clone https://github.com/RiyanshiVerma-11/CommAI.git
+git clone https://github.com/RamavathChanti/CommAI.git
 cd CommAI
 
 # Launch containers
@@ -587,11 +587,9 @@ docker-compose up --build
 # Navigate to backend directory
 cd backend
 
-# Activate virtual environment
-.\venv\Scripts\activate
-
-# Install dependencies (if not already installed)
+# Install dependencies
 pip install -r requirements.txt
+pip install groq
 
 # Launch FastAPI server with Uvicorn
 python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8001
@@ -632,19 +630,19 @@ npm run dev
 #### Seed Default Template Library
 Seed default templates across categories (emergency, awareness, healthcare, education):
 ```powershell
-$env:PYTHONPATH="backend"; .\venv\Scripts\python -m app.seed_all_templates
+$env:PYTHONPATH="backend"; python -m app.seed_all_templates
 ```
 
 #### Seed 5,000 Recipient Performance Dataset
 Load 5,000 recipient records to benchmark campaign dispatch performance:
 ```powershell
-$env:PYTHONPATH="backend"; .\venv\Scripts\python backend/app/seed_performance.py
+$env:PYTHONPATH="backend"; python backend/app/seed_performance.py
 ```
 
 #### Execute Unit & Integration Test Suite
 Run the comprehensive `pytest` test suite:
 ```powershell
-$env:PYTHONPATH="backend"; .\venv\Scripts\pytest backend\tests\
+$env:PYTHONPATH="backend"; python -m pytest backend\tests\
 ```
 
 ---
