@@ -1,0 +1,71 @@
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+settings.json
+backend/settings.json
+*-firebase-adminsdk-*.json
+service-account*.json
+*.json.key
+
+# SQLite Database files
+*.db
+*.sqlite3
+
+# Python cache and testing
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node/Frontend
+node_modules/
+dist/
+dist-ssr/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors and IDEs
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+
+# Audio Cache
+backend/static/audio_cache/*.mp3
+
+# AI Agent / IDE Config (not needed in repo)
+.agents/
+
+# Root level redundant files
+/package-lock.json
+/logo.jpeg
+
+# Backend utility/export scripts
+backend/export_database_to_excel.py
+backend/export_database_to_word.py
+backend/dispatch_campaign.py
+backend/static/logo.jpeg
+
+# Docs utility scripts
+docs/generate_docx_scripts.py
+
+# Default Vite placeholder assets
+frontend/src/assets/react.svg
+frontend/src/assets/vite.svg
+frontend/README.md
